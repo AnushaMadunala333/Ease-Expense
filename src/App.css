@@ -1,0 +1,161 @@
+body {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+
+.brand_name {
+  color: white;
+  height: 50px;
+  font-size: 40px;
+  width: 100%;
+  background-color: rgb(18, 73, 119);
+  padding: 20px;;
+}
+.dashboard {
+  font-size: 35px;
+  margin: 20px;
+  color: white;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+}
+.budget_container{
+  border: 50px solid white;
+  border-radius: 5px;;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin: 20px;
+  padding: 0;
+  
+}
+.budget_title {
+  font-size: 25px;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-align: left;
+}
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+.setbudget_title {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.budget_input {
+  height: 10px; /* Relative to font size */
+  padding: 10px;
+  font-size: 1em;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.save_budget {
+  height: 45px; /* Relative to font size */
+  padding: 10px;
+  font-size: 20px;
+  margin: 1px;
+  margin-top: 20px;
+  background-color: rgb(25, 133, 204);
+  border: 2px solid white;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.setbudget_container {
+  border: 50px solid white;
+  border-radius: 5px;;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 30%;
+  margin: 20px;
+}
+
+
+/* income expenses */
+
+.incomeexpense_container {
+  display: flex;
+  flex-direction: row;
+}
+
+.income_container {
+  flex: 1;
+  border: 10px solid white;
+  border-radius: 5px;;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin: 20px;
+  padding: 20px;
+  height: 350px;
+}
+
+@media (max-width: 768px) {
+  .incomeexpense_container {
+    width: 100%;
+    flex-direction: column;
+  }
+  .save_budget {
+    height: 70px; 
+  }
+   
+}
+
+.category_input {
+  height: 35px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.budget_amount {
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.budget_description {
+  font-size: 20px;
+}
+
+.transaction_history {
+  padding: 20px;
+}
+
+.history_title {
+  color: white;
+  font-size: 30px;
+}
+
+.transaction_table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.transaction_table th,
+.transaction_table td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.transaction_table th {
+  background-color: #f4f4f4;
+}
+.fill_details {
+  color: white;
+}
